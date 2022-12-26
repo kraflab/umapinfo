@@ -1,4 +1,4 @@
-# UMAPINFO Specification Rev 2.1
+# UMAPINFO Specification Rev 2.2
 Contents:
 - [Map Entry](#map-entry)
 - [Keys](#keys)
@@ -32,6 +32,10 @@ Specifies the string to prepend to the levelname on the automap. If not specifie
 
 `label = clear`
 Only print the levelname on the automap.
+
+### Author
+`author = "name"`
+Specifies the level author's name.
 
 ### LevelPic
 `levelpic = "graphic"`
