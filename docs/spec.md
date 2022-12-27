@@ -39,7 +39,7 @@ Specifies the level author's name.
 
 ### LevelPic
 `levelpic = "graphic"`
-Specifies the patch that is used on the status screen for 'entering' and 'finished'. This can be omitted, in that case the levelname will be printed with the HUD font.
+Specifies the patch that is used on the status screen for 'entering' and 'finished'.
 
 ### Next
 `next = "mapname"`
@@ -136,7 +136,7 @@ Normally, if some information cannot be found, the engine will fall back to its 
 
 - `enterpic` If the map that was just left has an exitpic entry and the map to be entered has no enterpic entry, the previous map's exitpic entry will be used for both screens.
 
-- `levelpic` If not given, the status screen will instead print the map's name with a suitable font (PrBoom uses STFxxx) to ensure that the proper name is used.
+- `levelpic` If not given, the status screen will instead print the map's name with a suitable font (PrBoom uses STFxxx) to ensure that the proper name is used. If the author field is set, it will also be shown.
 
 ## Example
 ```
