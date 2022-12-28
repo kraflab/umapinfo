@@ -1,10 +1,13 @@
-# UMAPINFO Rev 2.1
+# UMAPINFO Rev 2.2
 
 UMAPINFO is a cross-port (universal) MAPINFO variant that allows authors to adjust various aspects of levels and level progression. This includes names, music, par times, related images, episodic structure, secret exit destinations, etc.
 
 The full specification is available [here](./docs/spec.md).
 
 ### Revision History
+
+- Rev 2.2 (@rfomin, December 27 2022)
+  - Introduce the new `author` field.
 
 - Rev 2.1 (@rfomin, June 22 2021)
   - Lookup for default backdrop if `interbackdrop` is not specified.
