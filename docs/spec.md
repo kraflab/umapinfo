@@ -82,7 +82,7 @@ Ends the game after this level, showing the specified graphic as an end screen. 
 
 ### EndBunny
 `endbunny = true`
-Ends the game after this level, showing the bunny scroller. Skips the 'entering level' screen.
+Ends the game after this level, showing the bunny scroller. In Heretic it shows the demon scroller instead. Skips the 'entering level' screen.
 
 ### EndCast
 `endcast = true`
@@ -123,7 +123,7 @@ Clears the episode menu of all previous entries. Should be used on the first map
 
 ### BossAction
 `bossaction = thingtype, linespecial, tag`
-Defines a boss death action (triggers on A_BossDeath), overriding any map default actions. Tag 0 is not allowed except for level exits. Shoot triggers, teleporters and locked doors are not supported. A map may define multiple boss death actions. (see the full list for each game: [doom](./doom-thingtypes.md))
+Defines a boss death action (triggers on A_BossDeath), overriding any map default actions. Tag 0 is not allowed except for level exits. Shoot triggers, teleporters and locked doors are not supported. A map may define multiple boss death actions. (see the full list for each game: [doom](./doom-thingtypes.md), [heretic](./heretic-thingtypes.md))
 
 `bossaction = clear`
 Disables any previously-defined boss actions (including map defaults) for the given map.
