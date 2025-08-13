@@ -82,7 +82,7 @@ Ends the game after this level, showing the specified graphic as an end screen. 
 
 ### EndBunny
 `endbunny = true`
-Ends the game after this level, showing the bunny scroller. Skips the 'entering level' screen.
+Ends the game after this level, showing the bunny scroller. In Heretic it shows the demon scroller instead. Skips the 'entering level' screen.
 
 ### EndCast
 `endcast = true`
@@ -116,14 +116,14 @@ Music to be used for intertext and intertextsecret. If not specified D_VICTOR/D_
 
 ### Episode
 `episode = "patch", "name", "key"`
-Defines an entry for the episode menu. If all defined episodes define a valid patch, those will be shown, otherwise the names will be used with the HUD font. At most 8 episodes can be defined.
+Defines an entry for the episode menu. If all defined episodes define a valid patch, those will be shown, otherwise the names will be used with the HUD font. At most 10 episodes can be defined.
 
 `episode = clear`
 Clears the episode menu of all previous entries. Should be used on the first map if a mod wants to define its own episodes. Doom 2 and Chex Quest have no episodes by default.
 
 ### BossAction
 `bossaction = thingtype, linespecial, tag`
-Defines a boss death action, overriding any map default actions. Tag 0 is not allowed except for level exits. Shoot triggers, teleporters and locked doors are not supported. A map may define multiple death actions. Thingtype uses ZDoom's class names (see list below.)
+Defines a boss death action (triggers on A_BossDeath), overriding any map default actions. Tag 0 is not allowed except for level exits. Shoot triggers, teleporters and locked doors are not supported. A map may define multiple boss death actions. (see the full list for each game: [doom](./doom-thingtypes.md), [heretic](./heretic-thingtypes.md))
 
 `bossaction = clear`
 Disables any previously-defined boss actions (including map defaults) for the given map.
@@ -143,161 +143,11 @@ Normally, if some information cannot be found, the engine will fall back to its 
 MAP E1M7
 {
     levelname = "The Hidden Cave"
+    nextsecret = "MAP32"
     skytexture =  "sky2"
     intertext = "You have beaten the shit",
         "out of those big barons",
         "and now must continue the fight."
+    bossaction = Cyberdemon, 103, 5
 }
-```
-
-## Thingtypes
-```
-    DoomPlayer
-    ZombieMan
-    ShotgunGuy
-    Archvile
-    ArchvileFire
-    Revenant
-    RevenantTracer
-    RevenantTracerSmoke
-    Fatso
-    FatShot
-    ChaingunGuy
-    DoomImp
-    Demon
-    Spectre
-    Cacodemon
-    BaronOfHell
-    BaronBall
-    HellKnight
-    LostSoul
-    SpiderMastermind
-    Arachnotron
-    Cyberdemon
-    PainElemental
-    WolfensteinSS
-    CommanderKeen
-    BossBrain
-    BossEye
-    BossTarget
-    SpawnShot
-    SpawnFire
-    ExplosiveBarrel
-    DoomImpBall
-    CacodemonBall
-    Rocket
-    PlasmaBall
-    BFGBall
-    ArachnotronPlasma
-    BulletPuff
-    Blood
-    TeleportFog
-    ItemFog
-    TeleportDest
-    BFGExtra
-    GreenArmor
-    BlueArmor
-    HealthBonus
-    ArmorBonus
-    BlueCard
-    RedCard
-    YellowCard
-    YellowSkull
-    RedSkull
-    BlueSkull
-    Stimpack
-    Medikit
-    Soulsphere
-    InvulnerabilitySphere
-    Berserk
-    BlurSphere
-    RadSuit
-    Allmap
-    Infrared
-    Megasphere
-    Clip
-    ClipBox
-    RocketAmmo
-    RocketBox
-    Cell
-    CellPack
-    Shell
-    ShellBox
-    Backpack
-    BFG9000
-    Chaingun
-    Chainsaw
-    RocketLauncher
-    PlasmaRifle
-    Shotgun
-    SuperShotgun
-    TechLamp
-    TechLamp2
-    Column
-    TallGreenColumn
-    ShortGreenColumn
-    TallRedColumn
-    ShortRedColumn
-    SkullColumn
-    HeartColumn
-    EvilEye
-    FloatingSkull
-    TorchTree
-    BlueTorch
-    GreenTorch
-    RedTorch
-    ShortBlueTorch
-    ShortGreenTorch
-    ShortRedTorch
-    Stalagtite
-    TechPillar
-    CandleStick
-    Candelabra
-    BloodyTwitch
-    Meat2
-    Meat3
-    Meat4
-    Meat5
-    NonsolidMeat2
-    NonsolidMeat4
-    NonsolidMeat3
-    NonsolidMeat5
-    NonsolidTwitch
-    DeadCacodemon
-    DeadMarine
-    DeadZombieMan
-    DeadDemon
-    DeadLostSoul
-    DeadDoomImp
-    DeadShotgunGuy
-    GibbedMarine
-    GibbedMarineExtra
-    HeadsOnAStick
-    Gibs
-    HeadOnAStick
-    HeadCandles
-    DeadStick
-    LiveStick
-    BigTree
-    BurningBarrel
-    HangNoGuts
-    HangBNoBrain
-    HangTLookingDown
-    HangTSkull
-    HangTLookingUp
-    HangTNoBrain
-    ColonGibs
-    SmallBloodPool
-    BrainStem
-    PointPusher
-    PointPuller
-    MBFHelperDog
-    PlasmaBall1
-    PlasmaBall2
-    EvilSceptre
-    UnholyBible
-    MusicChanger
-    Deh_Actor_145
-    [...]
-    Deh_Actor_249
 ```

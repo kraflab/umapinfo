@@ -1,10 +1,16 @@
 # UMAPINFO Rev 2.2
 
-UMAPINFO is a cross-port (universal) MAPINFO variant that allows authors to adjust various aspects of levels and level progression. This includes names, music, par times, related images, episodic structure, secret exit destinations, etc.
+UMAPINFO is a cross-port (universal) MAPINFO variant for Doom and Heretic that allows authors to adjust various aspects of levels and level progression. This includes names, music, par times, related images, episodic structure, secret exit destinations, etc.
+
+It is not part of any standard, meaning it can be used for any wad. But as a rule of thumb, if a port supports MBF21, it will most likely support UMAPINFO.
 
 The full specification is available [here](./docs/spec.md).
 
 ### Revision History
+
+- Rev 3 (@fabiangreffrath @Pedro-Beirao @XaserAcheron, August 13 2025)
+  - Add Heretic handling.
+  - Allow at most 10 episodes, instead of 8.
 
 - Rev 2.2 (@rfomin, December 27 2022)
   - Introduce the new `author` field.
