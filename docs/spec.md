@@ -143,9 +143,11 @@ Normally, if some information cannot be found, the engine will fall back to its 
 MAP E1M7
 {
     levelname = "The Hidden Cave"
+    nextsecret = "MAP32"
     skytexture =  "sky2"
     intertext = "You have beaten the shit",
         "out of those big barons",
         "and now must continue the fight."
+    bossaction = Cyberdemon, 103, 5
 }
 ```
