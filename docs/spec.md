@@ -116,7 +116,7 @@ Music to be used for intertext and intertextsecret. If not specified D_VICTOR/D_
 
 ### Episode
 `episode = "patch", "name", "key"`
-Defines an entry for the episode menu. If all defined episodes define a valid patch, those will be shown, otherwise the names will be used with the HUD font. At most 8 episodes can be defined.
+Defines an entry for the episode menu. If all defined episodes define a valid patch, those will be shown, otherwise the names will be used with the HUD font. At most 10 episodes can be defined.
 
 `episode = clear`
 Clears the episode menu of all previous entries. Should be used on the first map if a mod wants to define its own episodes. Doom 2 and Chex Quest have no episodes by default.
