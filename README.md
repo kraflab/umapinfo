@@ -8,6 +8,10 @@ The full specification is available [here](./docs/spec.md).
 
 ### Revision History
 
+- Rev 3 (@fabiangreffrath @Pedro-Beirao @XaserAcheron, August 13 2025)
+  - Add Heretic handling.
+  - Allow at most 10 episodes, instead of 8.
+
 - Rev 2.2 (@rfomin, December 27 2022)
   - Introduce the new `author` field.
 
