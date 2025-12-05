@@ -1,4 +1,4 @@
-# UMAPINFO Specification Rev 2.2
+# UMAPINFO Specification Rev 2.?
 Contents:
 - [Map Entry](#map-entry)
 - [Keys](#keys)
@@ -20,7 +20,7 @@ Values can be strings, enclosed in quotation marks (`"`), numbers or identifiers
 The map names are limited to the format of the currently loaded IWAD, i.e. Doom 2 only supports MAPxx entries and Doom 1 only ExMy entries. The numbers x and y can exceed their original limits, though, so MAP50, E5M6 or even MAP100 or E1M10 are valid map names for their respective game. This limit comes from the game using numeric variables 'gameepisode' and 'gamemap' to identify a level. It may later be decided to lift the naming restriction but this cannot be done without some extensive refactoring which simply exceeds the scope of the initial implementation.
 
 ## Keys
-Currently the following keys are supported. If not given, the hardcoded default will be used, unless the following list says differently.
+Currently the following keys are supported. If not given, the defaults listed [here](./defaults.md) will be used, unless the following list says differently.
 
 ### Levelname
 `levelname = "name"`
