@@ -129,7 +129,7 @@ Defines a boss death action, overriding any map default actions. Tag 0 is not al
 Disables any previously-defined boss actions (including map defaults) for the given map.
 
 ### Jumping
-`jumping = disable`
+`jumping = disallow`
 Jumping is disallowed. Jump actions should be prevented and be treated as a no-op.
 
 `jumping = allow`
@@ -141,7 +141,7 @@ Enables jumping. If jumping is not supported, a warning that the map may not wor
 Ports implementing the UMAPINFO specification are not required to support jumping.
 
 ### Crouching
-`crouching = disable`
+`crouching = disallow`
 Crouching is disallowed. Crouch actions should be prevented and be treated as a no-op.
 
 `crouching = allow`
@@ -153,7 +153,7 @@ Enables crouching. If crouching is not supported, a warning that the map may not
 Ports implementing the UMAPINFO specification are not required to support crouching.
 
 ### FreeAim
-`freeaim = disable`
+`freeaim = disallow`
 Vertical aiming is disallowed.
 
 `freeaim = allow`
