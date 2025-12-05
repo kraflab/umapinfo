@@ -1,4 +1,4 @@
-# UMAPINFO Specification Rev 2.2
+# UMAPINFO Specification Rev 2.?
 Contents:
 - [Map Entry](#map-entry)
 - [Keys](#keys)
@@ -130,21 +130,39 @@ Disables any previously-defined boss actions (including map defaults) for the gi
 
 ### Jumping
 `jumping = false`
-Disallows jumping
+Jumping is disallowed. Jump actions should be prevented and be treated as a no-op.
+
+`jumping = clear`
+The default, jumping is not prevented in ports which support jumping.
 
 `jumping = true`
-Allows jumping
+Enables jumping. If jumping is not supported, a warning that the map may not work as intended should be displayed, either upon loading the wad or when starting the map.
 
-The default for this key is implementation defined, and ports implementing this specification are not required to support jumping.
+Ports implementing the UMAPINFO specification are not required to support jumping.
 
-### Freelook
-`freelook = false`
-Disallows looking up and down
+### Crouching
+`crouching = false`
+Crouching is disallowed. Crouch actions should be prevented and be treated as a no-op.
 
-`freelook = true`
-Allows looking up and down
+`crouching = clear`
+The default, crouching is not prevented in ports which support crouching.
 
-The default for this key is implementation defined, and ports implementing this specification are not required to support freelook.
+`crouching = true`
+Enables crouching. If crouching is not supported, a warning that the map may not work as intended should be displayed, either upon loading the wad or when starting the map.
+
+Ports implementing the UMAPINFO specification are not required to support crouching.
+
+### FreeAim
+`freeaim = false`
+Vertical aiming is disallowed.
+
+`freeaim = clear`
+The default, vertical aiming is not prevented in ports which support it.
+
+`freeaim = true`
+Enables vertical aiming as well as freelook. If either is not supported, a warning that the map may not work as intended should be displayed, either upon loading the wad or when starting the map.
+
+Ports implementing the UMAPINFO specification are not required to support freelook or vertical aiming.
 
 ## Default handling
 
