@@ -128,6 +128,24 @@ Defines a boss death action, overriding any map default actions. Tag 0 is not al
 `bossaction = clear`
 Disables any previously-defined boss actions (including map defaults) for the given map.
 
+### Jumping
+`jumping = false`
+Disallows jumping
+
+`jumping = true`
+Allows jumping
+
+The default for this key is implementation defined, and ports implementing this specification are not required to support jumping.
+
+### Freelook
+`freelook = false`
+Disallows looking up and down
+
+`freelook = true`
+Allows looking up and down
+
+The default for this key is implementation defined, and ports implementing this specification are not required to support freelook.
+
 ## Default handling
 
 Normally, if some information cannot be found, the engine will fall back to its hard coded implementation, with a few exceptions:
