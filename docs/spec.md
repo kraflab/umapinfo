@@ -44,6 +44,10 @@ Specifies the patch that is used on the status screen for 'entering' and 'finish
 ### Next
 `next = "mapname"`
 Specifies the map the regular exit leads to. In Doom 1 this may cross episodes.
+TODO: further clarify how next and nextsecret work
+remove specific mention of doom 1, this is also true of doom 2 with episodes
+maybe clarify that episodes arent really collections of levels but just a menu item and a beginning map
+especially in doom 2
 
 ### NextSecret
 `nextsecret = "mapname"`
@@ -68,6 +72,8 @@ Specifies the background for the 'entering level' screen. This can override Doom
 ### ParTime
 `partime = seconds`
 Specifies the level's par time.
+TODO:
+sounds like some ports dont display par time if a map is defined in UMAPINFO but partime is not explicitly set
 
 ### EndGame
 `endgame = false`
