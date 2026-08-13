@@ -121,6 +121,18 @@ Defines an entry for the episode menu. If all defined episodes define a valid pa
 `episode = clear`
 Clears the episode menu of all previous entries. Should be used on the first map if a mod wants to define its own episodes. Doom 2 and Chex Quest have no episodes by default.
 
+### MonstersTelefrag
+`monsterstelefrag = true`
+Monsters may telefrag other monsters or players, both by being spawned by Icon of Sin cubes, and by activating teleport lines. This is the default behavior in Doom II MAP30.
+
+If this key is not present in a map block, this behavior defaults to 'true' in MAP30, and 'false' in all other levels.
+
+In ports which enable MBF's feature to allow Icon of Sin spawned monsters to telefrag on any level, this property will have no effect unless the port's compat option `comp_telefrag 1` is enabled.
+This aligns with the default behavior of MAP30 in those ports.
+
+`monsterstelefrag = false`
+Disabling the key in a MAP30 definition will override the original MAP30 behavior.
+
 ### BossAction
 `bossaction = thingtype, linespecial, tag`
 Defines a boss death action, overriding any map default actions. Tag 0 is not allowed except for level exits. Shoot triggers, teleporters and locked doors are not supported. A map may define multiple death actions. Thingtype uses ZDoom's class names (see list below.)
