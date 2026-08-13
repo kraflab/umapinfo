@@ -1,3 +1,6 @@
+> [!IMPORTANT]  
+> See [doom-cross-port-collab/umapinfo](https://github.com/doom-cross-port-collab/umapinfo) for newer revisions of UMAPINFO.
+
 # UMAPINFO Rev 2.2
 
 UMAPINFO is a cross-port (universal) MAPINFO variant that allows authors to adjust various aspects of levels and level progression. This includes names, music, par times, related images, episodic structure, secret exit destinations, etc.
